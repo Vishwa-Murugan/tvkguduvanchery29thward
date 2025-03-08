@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header section */
+.header {
+    background-color: #ffcc00;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-flag {
+    max-width: 80%;  /* Ensure the flag takes up 80% of the width, making it smaller */
+    height: auto;    /* Maintain aspect ratio */
+    width: auto;     /* Ensure it resizes automatically based on screen size */
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    .header-flag {
+        max-width: 90%;  /* Increase flag width to 90% on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-flag {
+        max-width: 100%;  /* On very small screens, the flag can take the full width */
+    }
+}
+
+/* Introduction section */
+.about {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Events section */
+.events {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.events h2 {
+    font-size: 2em;
+    color: #d32f2f;
+}
+
+.events ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.events li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Gallery section */
+.gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    color: #d32f2f;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #d32f2f;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Footer section */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1.1em;
+    color: #555;
+}
